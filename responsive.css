@@ -32,8 +32,10 @@
   }
 
   .plan-item {
-    margin: 1rem 0;
     min-width: 50rem;
+  }
+  .plan-item:not(:last-child) {
+    margin-bottom: 1rem;
   }
 
   .plan-item:not(:nth-child(2)) {
@@ -46,16 +48,32 @@
 }
 
 @media (max-width: 768px) {
-  .nav {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+  }
+  .nav__menu {
     display: none;
   }
 
-  .nav-mobile {
+  .mobilenav-toggle {
+    display: flex;
+  }
+
+  .mobile-nav {
     display: flex;
   }
 
   .hero-content__title {
     font-size: 6rem;
+  }
+
+  .hero-content__paragraph {
+    font-size: 1.5rem;
   }
 
   .section-title {
@@ -89,6 +107,7 @@
   .hero-content {
     padding: 0 2.5rem;
   }
+
   .hero-content__title {
     font-size: 4rem;
   }
