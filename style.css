@@ -14,6 +14,7 @@ html {
   font-size: 10px;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -455,7 +456,7 @@ img {
   margin-right: 0.1rem;
 }
 
-.plan-item__price--value p {
+.plan-item__price--value .number {
   font-size: 6rem;
   font-weight: 700;
   line-height: 1.1;
@@ -636,7 +637,7 @@ img {
   content: '';
   position: absolute;
   height: 1px;
-  width: 0%;
+  width: 0;
   background: var(--primary);
   bottom: 0;
   transition: width 100ms ease-in-out;
